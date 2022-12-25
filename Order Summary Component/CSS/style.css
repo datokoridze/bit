@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Red Hat Display';
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url(/Images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 20px;
+    text-align: center;
+    max-width: 327px;
+    
+}
+
+img.cover {
+    border-radius: 20px 20px 0px 0px;
+    max-width: 327px;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+    color: #1F2E55;
+
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #717FA6;
+    white-space: pre-wrap;
+}
+
+.planBox {
+    display: flex;
+    background-color: #F7F9FF;
+    border-radius: 11px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planBox1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+.planBox1 img {
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.plan {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #1F2E55;
+    
+}
+
+.paymentPlan {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #717FA6;
+}
+
+.change, .change:visited {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+    text-decoration-line: underline;
+
+    color: #382AE1;
+    margin-right: 40px;
+}
+
+button {
+    background: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    padding: 15px 65px;
+    border: none;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    margin: 24px;
+    white-space: nowrap;
+}
+
+.cancelOrder {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717FA6;
+    margin-bottom: 32px;
+    display: block;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        background: url(/Images/pattern-background-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        min-width: 450px;
+    }
+
+    .cover {
+        min-width: 450px;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 37px;
+        padding-top: 45px;
+        padding-bottom: 17px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .plan {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .paymentPlan {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    .change, .change:visited {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    button {
+        margin: 32px 48px;
+        padding: 15px 102px;
+    }
+
+    .cancelOrder {
+        margin-bottom: 48px;
+    }
+}
