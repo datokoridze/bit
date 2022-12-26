@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background-color: #19A1AE;
+}
+
+.bgPatternTop {
+    background: url("/Images/bg-pattern-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -411px;
+    top: -333px;
+    position: absolute;
+    width: 622px;
+    height: 621px;
+    overflow: hidden;
+}
+
+.bgPatternBot {
+    background: url("/Images/bg-pattern-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 171px;
+    top: 367px;
+    position: absolute;
+    width: 622px;
+    height: 621px;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+
+    border-radius: 15px;
+    width: 326px;
+    height: 374px;
+    padding-bottom: 27px;
+}
+
+.bgBottom {
+    overflow: hidden;
+    margin: -1rem;
+}
+
+.bgTop {
+    overflow: hidden;
+}
+
+.bgTopImg {
+    border-radius: 15px 15px 0 0;   
+    width: 326px;
+}
+
+.heroImg {
+    border: 5px solid #FFFFFF;
+    border-radius: 50%;
+    margin: -68px;
+}
+
+.textContent {
+    margin-top: 75px
+}
+
+.title {
+    color: #2E3349;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 13px;
+}
+.title span {
+    color: #6B7082;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #6B7082;
+    padding-bottom: 53px;
+}
+
+.socialActivity {
+    padding-left: 42.5px;
+    padding-right: 53.5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.followers h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2E3349;
+}
+.followers p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+
+    color: #6B7082;
+}
+
+.likes h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2E3349;
+}
+.likes p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+
+    color: #6B7082;
+}
+
+.photos h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2E3349;
+}
+.photos p {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+
+    color: #6B7082;
+}
+
+.activity {
+    padding-top: 9px;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 350px;
+    }
+
+    .bgTopImg {
+        width: 350px;
+    }
+
+    .bgPatternTop {
+        width: 978px;
+        height: 978px;
+        left: -275px;
+        top: -486px;
+    }
+
+    .bgPatternBot {
+        width: 978px;
+        height: 978px;
+        left: 739px;
+        top: 350px;
+    }
+}
