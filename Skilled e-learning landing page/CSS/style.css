@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Plus Jakarta Sans';
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.logoImg {
+    width: 89px;
+    cursor: pointer;
+}
+
+.getStarted1 {
+    width: 140px;
+    height: 48px;
+
+    color: #fff;
+    background: #13183F;
+    border-radius: 28px;
+    border-radius: 28px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.main {
+    padding: 16px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+
+    color: #13183F;
+    margin-bottom: 26px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.getStarted2 {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 31.5px;
+    padding: 15px 37px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    margin-bottom: 46px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px 66px 8px;
+}
+
+.heroImgTablet {
+    display: none;
+}
+.heroImgDesktop {
+    display: none;
+}
+
+h2 {
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    padding: 24px 29px 32px 28px;
+    margin-bottom: 16px;
+
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.course {
+    padding: 0 29px 32px 28px;
+    margin-bottom: 16px;
+}
+
+.getStartedLink {
+    display: block;
+    padding-top: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+}
+
+.courseTitle {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+.courseDescription {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A;
+}
+
+.footerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #13183F;
+    width: 100%;
+    height: 120px;
+    padding: 36px 16px;
+}
+
+.footerGetStarted { 
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 24px 11px 24px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 24px 40px 0 39px;
+        position: relative;
+    }
+
+    .textContent {
+        width: 55%;
+        margin-top: 105px;
+    }
+
+    .heroImg {
+        display: none;
+    }
+
+    .heroImgTablet {
+        display: flex;
+        position: absolute;
+        top: -84px;
+        right: -301px;
+    }
+
+    h2 {
+        margin-top: 24px;
+        width: 50%;
+        height: 259px;
+        display: inline-block;
+        padding-top: 56px;
+        margin-bottom: 32px;
+    }
+
+    .courses {
+        margin-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .course {
+        width: 50%;
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .header {
+        padding: 24px 165px 0 165px;
+    }
+
+    .logoImg {
+        width: 114px;
+    }
+
+    .getStarted1 {
+        width: 167px;
+        height: 56px;
+        border-radius: 28px;
+        z-index: 1;
+    }
+    .getStarted1:hover {
+        background: #666CA3;
+        border-radius: 28px;
+    }
+
+    .main {
+        padding: 178px 165px 140px 165px;
+    }
+
+    .heroImgTablet {
+        display: none;
+    }
+
+    .heroImgDesktop {
+        display: flex;
+        position: absolute;
+        top: -149px;
+        right: -333px;
+        
+    }
+
+    .textContent {
+        width: 40%;
+    }
+
+    .title {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 71px;
+        color: #13183F;
+        margin-bottom: 29px;
+    }
+
+    .description {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #83869A;
+        width: 85%;
+    }
+
+    .getStarted2 {
+        padding: 19px 31px;
+        margin-top: 40px;
+    }
+    .getStarted2:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        border-radius: 31.5px;
+    }
+
+    h2 {
+        width: 29%;
+    }
+
+    .course {
+        width: 29%;
+        padding: 0 32px 40px 32px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+        border-radius: 15px;
+    }
+
+    .getStartedLink:hover {
+        color: #FFA7C3;
+    }
+
+    .animation, .design {
+        margin-left: 30px;
+    }
+    .photography, .crypto {
+        margin-right: 30px;
+    }
+    .photography, .crypto, .business {
+        margin-top: 30px;
+    }
+
+
+    .footerBox {
+        padding: 32px 165px;
+    }
+
+    .footerLogoImg {
+        width: 114px;
+        cursor: pointer;
+    }
+
+    .footerGetStarted:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        border-radius: 28px;
+    }
+
+}
