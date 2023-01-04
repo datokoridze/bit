@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    /* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* ROOT */
+
+:root {
+    /* PRIMARY */
+
+    --Red: #ea5353;
+    --Cyan: #45d3d3;
+    --Orange: #fcaf4a;
+    --Blue: #549ef2;
+
+    /* NEUTRAL */
+
+    --Very_Dark_Blue: #4D4F62;
+    --Grayish_Blue: #a3a5ae;
+    --very_Light_Gray: #fafafa;
+    --white: #fff;
+}
+
+    /* BODY */
+
+    body {
+        padding: 85px 32px 53px;
+        color: var(--Very_Dark_Blue);
+        background-color: var(--very_Light_Gray);
+    }
+
+    /* HEADER */
+
+    .header {
+        margin-bottom: 76px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerTitle {
+        font-weight: 275;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 275;
+        letter-spacing: 0.166667px;
+    }
+
+    .poweredBy {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.166667px;
+
+        padding-bottom: 13px;
+    }
+
+    .headerDescription {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0.104167px;
+        color: #4D4F62;
+        opacity: 0.5;
+        text-align: center;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    /* MAIN */
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .category {
+        padding: 28px;
+        
+        box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+        border-radius: 8px;
+        position: relative;
+        height: 222px;
+        width: 311px;
+
+        background: var(--white);
+    }
+
+    .category::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 3.55px;
+        width: 100%;
+        overflow: hidden;
+
+        border-radius: 8px 8px 0 0;
+        box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+        -webkit-border-radius: 8px 8px 0 0;
+        -moz-border-radius: 8px 8px 0 0;
+        -ms-border-radius: 8px 8px 0 0;
+        -o-border-radius: 8px 8px 0 0;
+}
+
+    .supervisor::before {background-color: var(--Cyan);}
+    .builder::before {background-color: var(--Red)}
+    .karma::before {background-color: var(--Orange)}
+    .calculator::before {background-color: var(--Blue)}
+
+    .categoryTitle {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .categoryDescription {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.0902778px;
+        opacity: 0.5;
+        width: 100%;
+
+        color: var(--Very_Dark_Blue);
+    }
+
+    .img {
+        position: absolute;
+        right: 28px;
+        bottom: 28px;
+}
+
+    /************************************************************ MEDIA ************************************************************/
+
+    @media screen and (min-width: 1057px) {
+        .karma, .supervisor {
+            top: 125px;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+
+        body {
+            padding: 0 0 80px 0;
+        }
+
+        /* HEADER */
+
+        .header {
+            padding: 64px 450px 64px 450px;
+            margin: 0;
+        }
+
+        .headerTitle {
+            font-weight: 275;
+            font-size: 36px;
+            line-height: 54px;
+            letter-spacing: 0.25px;
+        }
+
+        .poweredBy {
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+            letter-spacing: 0.25px;
+        }
+
+        .headerDescription {
+            width: 100%;
+
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: 0.104167px;
+        }
+
+        /* MAIN */
+
+        .main {
+            padding: 0 165px 0 165px;
+            gap: 0;
+        }
+
+        .category {
+            padding: 32px;
+            width: 350px;
+            margin: 0;
+        }
+
+        .categoryDescription {
+            width: 100%;
+        }
+
+        .img {
+            right: 32px;
+            bottom: 32px;
+        }
+
+        .supervisor {
+            left: -30px;
+            top: 125px;
+        }
+        
+        .karma {
+            order: 2;
+            top: 30px;
+        }
+
+        .calculator {
+            top: 125px;
+            right: -30px;
+        }
+    }
+
+    @media screen and (min-width: 1730px) {
+        .main {
+            padding: 0 300px 0 300px;
+        }
+    }
